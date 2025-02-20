@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa"; 
-import logo from "../../public/Images/Main Logo.png";
+import logo from "../../src/Images/Main Logo.png";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -14,9 +14,6 @@ const Navbar = () => {
             alt="Logo"
             className="h-[15vh] w-[30vw] sm:h-[18vh] sm:w-[10vw]"
           />
-          <h1 className="mt-8 text-xl sm:text-2xl font-bold cursor-pointer hover:text-red-500 md:mt-12 md:-ml-3">
-            Explore
-          </h1>
         </div>
         <ul className="hidden md:mt-12 md:flex gap-6 text-lg">
           <li className="hover:text-red-500 cursor-pointer">Home</li>
