@@ -49,11 +49,11 @@ const Image = () => {
       ];
   return (
     <>
-    <div className="flex flex-col ml-[3rem]  md:ml-[9rem] mt-[2rem] md:mt-[5rem]">
+    <div className="flex flex-col ml-[3rem]  md:ml-[9rem] mt-[4rem] md:mt-[5rem]">
     <h3 className='text-[1.3rem]'>Explore featured boards</h3>
     <h1 className='text-red-500 text-3xl  md:text-4xl'>Discover new ideas</h1>
     </div>
- <div className="parent ml-[1.6rem]  md:ml-[7rem] md:mr-[7rem]">
+ <div className="parent ml-[1.5rem]  md:ml-[7rem] md:mr-[7rem]">
       <Carousel
         responsive={responsive}
         autoPlay={true}
