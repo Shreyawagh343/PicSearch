@@ -1,20 +1,31 @@
 import React from 'react'
 import { FaGoogle } from "react-icons/fa";
+import { motion } from 'framer-motion';
 
 const SigninHome = () => {
   return (
-    <div className="flex md:h-[85vh] md:bg-[#f5ebe0]">
-      <div className="relative w-1/2 hidden md:block">
+    <div className="flex md:h-[85vh] ">
+      <motion.div 
+      initial={{ y: 180, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{
+        delay: 1.0,
+        y: { type: "spring", stiffness: 60 },
+        opacity: { duration: 0.2 },
+        ease: "ease-out",
+        duration: 1,
+      }}
+      className="relative w-1/2 hidden md:block">
         <div className="absolute inset-0 items-center justify-center md:mt-[14rem] md:ml-[14rem]">
-          <h1 className="text-center text-red-500 mt-[3rem] md:mt-[2rem] md:w-[30vw] text-4xl md:text-5xl ">
+          <h1 className="text-center font-bold mt-[3rem] md:mt-[2rem] md:w-[30vw] text-4xl md:text-5xl ">
           Join Us & Bring Your Ideas to Life!
           </h1>
-          <p className="text-center mt-[1rem] text-[1.3rem] md:text-[1.4rem] md:w-[30vw]">Sign up today to save, share, and explore endless inspiration tailored just for you!</p>
+          <p className="text-center text-red-500 mt-[1rem] text-[1.3rem] md:text-[1.4rem] md:w-[30vw]">Sign up today to save, share, and explore endless inspiration tailored just for you!</p>
         </div>
-      </div>
+      </motion.div>
 
       {/* Sign-in Form */}
-      <div className="w-full md:w-[30vw] bg-white p-8 shadow-lg rounded-lg md:ml-[4rem] md:h-[80vh] mt-[1rem]">
+      <div className="w-full md:w-[30vw] bg-white p-8 shadow-[0px_5px_15px_rgba(0,0,0,0.35)] rounded-lg md:ml-[4rem] md:h-[80vh] mt-[1rem]">
         <h2 className="text-3xl font-semibold text-gray-900 text-center">
           Welcome to PicSearch
         </h2>

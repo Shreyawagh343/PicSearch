@@ -46,7 +46,7 @@ const Image = () => {
   return (
     <>
       <motion.div
-        initial={{ y: 160, opacity: 0 }}
+        initial={{ y: 100, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{
           delay: 0.7,
@@ -55,7 +55,7 @@ const Image = () => {
           ease: "ease-in",
           duration: 1,
         }}
-        className="flex flex-col ml-[3rem]  md:ml-[9rem] mt-[4rem] md:mt-[5rem]"
+        className="flex flex-col ml-[3rem]  md:ml-[9rem] mt-[4rem] md:mt-[7rem]"
       >
         <h3 className="ml-[1.5rem] text-[1.5rem] md:text-[1.3rem]">
           Explore featured boards
