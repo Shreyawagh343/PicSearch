@@ -6,6 +6,7 @@ import SaveIdea from '../Components/SaveIdea'
 import Treading from '../Components/Treading'
 import ShareIdea from '../Components/ShareIdea'
 import SigninHome from '../Components/SigninHome'
+import Footer from '../Components/Footer'
 
 
 const Home = () => {
@@ -17,6 +18,7 @@ const Home = () => {
     <SaveIdea/>
     <ShareIdea/>
     <SigninHome/>
+    <Footer/>
     </>
   )
 }
