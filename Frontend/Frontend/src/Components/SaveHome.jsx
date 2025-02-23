@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const SaveHome = () => {
   return (
-    <div className='w-[100vw] h-[80vh] md:flex mb-[7rem]'>
+    <div className=' h-[155vh] md:w-[100vw] md:h-[80vh] md:flex mb-[7rem]'>
         <div className="">
             <motion.img 
             
@@ -19,7 +19,7 @@ const SaveHome = () => {
             }}
             
             
-            src="https://img.freepik.com/premium-photo/beautiful-girl-yellow-background_392895-212792.jpg?uid=R155647787&ga=GA1.1.74947205.1720868009&semt=ais_hybrid" alt=""  className='md:w-[27vw] md:h-[70vh] md:ml-[10rem] md:mt-[5rem]'/>
+            src="https://img.freepik.com/premium-photo/beautiful-girl-yellow-background_392895-212792.jpg?uid=R155647787&ga=GA1.1.74947205.1720868009&semt=ais_hybrid" alt=""  className='md:w-[27vw] md:h-[70vh] w-[80vw] mt-[4rem]  ml-[2.3rem] h-[50vh] md:ml-[10rem] md:mt-[5rem]'/>
         </div>
         <div className="">
          <motion.h1 
@@ -32,7 +32,7 @@ const SaveHome = () => {
            ease: "ease-out",
            duration: 1,
          }}
-         className=" text-red-500 mt-[3rem] md:mt-[8rem]  text-4xl md:text-5xl md:ml-[15rem]">
+         className=" text-red-500 mt-[3rem] md:mt-[8rem]  text-4xl md:text-5xl ml-[1.4rem] md:ml-[15rem]">
           Save Ideas You Love
         </motion.h1>
         <motion.p 
@@ -45,7 +45,7 @@ const SaveHome = () => {
           ease: "ease-out",
           duration: 1,
         }}
-        className="mt-[2rem] text-[1.3rem] md:text-2xl md:ml-[10rem] w-[40vw]">Every great idea starts with a spark—don’t let yours fade away. Save anything that catches your eye, from stunning decor and fashion trends to innovative DIY projects, revisit them whenever you need, and bring your creative vision to life. With all your saved ideas in one place, you’ll always have inspiration at your fingertips!</motion.p>
+        className="mt-[2rem] text-[1.3rem] md:text-2xl ml-[2.5rem] md:ml-[10rem] w-[18rem] md:w-[40vw]">Every great idea starts with a spark—don’t let yours fade away. Save anything that catches your eye, from stunning decor and fashion trends to innovative DIY projects, revisit them whenever you need, and bring your creative vision to life. With all your saved ideas in one place, you’ll always have inspiration at your fingertips!</motion.p>
         <Link to="/saveIdeas"><motion.button
           initial={{ x: 180, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
@@ -56,7 +56,7 @@ const SaveHome = () => {
             ease: "ease-in",
             duration: 1,
           }}
-          className="w-[60vw] md:w-[18vw] text-[1.3rem] md:text-[1.4rem] rounded-[4rem] h-[10vh] md:h-[9vh] border border-black ml-[0rem] md:ml-[20rem] mt-[2rem] hover:text-white hover:bg-red-400 hover:border-none text-red-500 font-bold"
+          className="w-[60vw] md:w-[18vw] text-[1.3rem] md:text-[1.4rem] rounded-[4rem] h-[10vh] md:h-[9vh] border border-black ml-[5rem] md:ml-[20rem] mt-[2rem] hover:text-white hover:bg-red-400 hover:border-none text-red-500 font-bold"
         >
           Start Collecting
         </motion.button>

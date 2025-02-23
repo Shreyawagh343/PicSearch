@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const SigninHome = () => {
   return (
-    <div className="flex md:h-[85vh] ">
+    <div className="flex md:h-[85vh] mb-[5rem] ">
       <motion.div 
       initial={{ y: 180, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
@@ -25,7 +25,7 @@ const SigninHome = () => {
       </motion.div>
 
       {/* Sign-in Form */}
-      <div className="w-full md:w-[30vw] bg-white p-8 shadow-[0px_5px_15px_rgba(0,0,0,0.35)] rounded-lg md:ml-[4rem] md:h-[80vh] mt-[1rem]">
+      <div className="w-[90vw] md:w-[30vw] bg-white p-8 shadow-[0px_5px_15px_rgba(0,0,0,0.35)] ml-[1rem] rounded-lg md:ml-[4rem] md:h-[80vh] mt-[1rem]">
         <h2 className="text-3xl font-semibold text-gray-900 text-center">
           Welcome to PicSearch
         </h2>
