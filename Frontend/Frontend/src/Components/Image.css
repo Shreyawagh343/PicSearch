@@ -1,29 +1,61 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  .slider {
-    margin:0px 2rem;
-    overflow:"hidden";
-    padding:2rem 0;
-  }
-  
-  .slider img {
-    margin-top:1rem;
-    width: 100%;
-    height:40vh;
-    border-radius:10px;
-  }
-  
-  .react-multi-carousel-list {
-  padding: 0rem 0 2rem 0;
-  }
-  
-  .custom-dot-list-style button{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.slider {
+  margin: 0 2rem;
+  overflow: hidden;
+  padding: 2rem 0;
+}
+
+.slider img {
+  margin-top: 1rem;
+  width: 100%;
+  height: 40vh;
+  border-radius: 10px;
+}
+
+.carousel-container {
+  position: relative;
+  margin-top: 2rem; /* Adjust as needed to ensure space from the navbar */
+}
+
+.react-multi-carousel-list {
+  padding: 0 0 2rem 0;
+}
+
+.react-multiple-carousel__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10; /* Ensure arrows are above the images but below the navbar */
+  background-color: rgba(30, 30, 30, 0.7); /* Optional: Add background for better visibility */
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+
+.react-multiple-carousel__arrow--left {
+  left: 35px; /* Adjust to position the left arrow */
+}
+
+.react-multiple-carousel__arrow--right {
+  right: 35px; /* Adjust to position the right arrow */
+}
+
+.custom-dot-list-style {
+  position: absolute;
+  bottom: 20px; /* Adjust to position the dots */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.custom-dot-list-style button {
   border: none;
   background: rgb(255, 68, 68);
-  }
-  .react-multi-carousel-dot.react-multi-carousel-dot--active button{
+}
+
+.react-multi-carousel-dot.react-multi-carousel-dot--active button {
   background: rgb(255, 68, 68) !important;
-  }
+}
