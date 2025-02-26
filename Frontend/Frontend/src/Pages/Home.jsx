@@ -1,5 +1,5 @@
 import React from 'react'
-import Navabar from '../Components/Navabar'
+import Navbar from '../Components/Navbar'
 import Image from '../Components/Image'
 import Hero from '../Components/Hero'
 import ShareIdea from '../Components/ShareIdea'
@@ -11,15 +11,17 @@ import SaveHome from '../Components/SaveHome'
 const Home = () => {
   return (
     <>
-    <Navabar/>
-    <Hero/>
-    <Image/>
-    <SaveHome/>
-    <ShareIdea/>
-    <SigninHome/>
-    <Footer/>
+      <div className='max-w-7xl mx-auto overflow-x-hidden mt-16 overflow-y-hidden'>
+        <Navbar />
+        <Hero />
+        <Image />
+        <SaveHome />
+        <ShareIdea />
+        <SigninHome />
+      </div>
+        <Footer />
     </>
-  )
+  );
 }
 
 export default Home
